@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>planets in universe</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        header {
+            background-color: rgb(236, 236, 240);
+            color: rgb(237, 242, 244);
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 36px;
+            background-color: black;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .frame {
+            width: calc(33.33% - 20px);
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: transparent;
+            box-shadow: 0 0 10px rgba(20, 100, 184, 0.1);
+        }
+        .frame img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .frame h2 {
+            font-size: 24px;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        /* Media Queries */
+        @media screen and (max-width: 768px) {
+            .frame {
+                width: calc(50% - 20px);
+                background-color:grey;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .frame {
+                width: 100%;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted id="bg-video">
+            <source src="C:\Users\manoh\OneDrive\Desktop\UI development\my project\204926-925688162_small.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+    <header>
+        <h1>List of Stars</h1>
+    </header>
+    <div class="container">
+        <div class="frame">
+            <img src="antares.jpg" alt="Frame 1">
+            <h2>antares</h2>
+            <button onclick="openWiki('antares')">More...</button>
+        </div>
+        <div class="frame">
+            <img src="arcturus.jpg" alt="Frame 2">
+            <h2>arcturus</h2>
+            <button onclick="openWiki('arcturus')">More...</button>
+        </div>
+        <div class="frame">
+            <img src="alphaursae.jpg" alt="Frame 3">
+            <h2>alphaursae</h2>
+            <button onclick="openWiki('alphaursae')">More...</button>
+        </div>
+        <div class="frame">
+            <img src="aldebaran.jpg" alt="Frame 3">
+            <h2>aldebaran</h2>
+            <button onclick="openWiki('aldebaran')">More...</button>
+        </div>
+        <div class="frame">
+            <img src="deltacanis.jpg" alt="Frame 4">
+            <h2>deltacanis</h2>
+            <button onclick="openWiki('deltacanis')">More...</button>
+        </div>
+        <div class="frame">
+            <img src="rigel.jpg" alt="Frame 3">
+            <h2>rigel</h2>
+            <button onclick="openWiki('rigel')">More...</button>
+        </div> <div class="frame">
+            <img src="betelgeuse.jpg" alt="Frame 3">
+            <h2>betelgeuse</h2>
+            <button onclick="openWiki('betelgeuse')">More...</button>
+        </div>
+        <div class="frame">
+            <img src="canopus.jpg" alt="Frame 3">
+            <h2>canopus</h2>
+            <button onclick="openWiki('canopus')">More...</button>
+        </div>
+        <div class="frame">
+            <img src="Tau Scorpii.jpeg" alt="Frame 3">
+            <h2>Tau scorpii</h2>
+            <button onclick="openWiki('canopus')">More...</button>
+        </div>
+    </div>
+    <script>
+        function openWiki(starName) {
+            var starNameForURL = starName.replace(/\s+/g, '_');
+            window.open('https://en.wikipedia.org/wiki/' + starNameForURL, '_blank');
+        }
+    </script>
+</body>
+</html>
+
+
+Order received.Order done.Sold out.
